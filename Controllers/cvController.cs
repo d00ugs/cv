@@ -9,10 +9,9 @@ namespace cv.Controllers
     [Route("api/[controller]")]
     public class cvController : Controller
     {
-
         // GET api/cv/{id}
         [HttpGet("{id}")]
-        public string Get(string id)
+        public IActionResult Get(string id)
         {
              Dictionary<string, string> contents = new Dictionary<string, string>() 
              {
@@ -23,12 +22,13 @@ By contrast, at home there are two distinct setups: the it/IT just works {TV, wi
 I'm 'into computers', cloud, tablet, coding, building. I like mobile, Internet of Things, Virtual Reality, Augmented Reality. As a proper old skool geek I am into all of the Linux, Apple and Microsoft.",
              };
 
-            string value;
-            if(false == contents.TryGetValue(id, out value))
+            string value = "";
+            if (!contents.TryGetValue(id, out value))
             {
-                value = id;
+                return NotFound();
             }
-            return value;
+
+            return Ok(value);
         }
 
     }
