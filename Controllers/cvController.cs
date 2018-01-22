@@ -20,6 +20,13 @@ namespace cv.Controllers
 By contrast, at home there are two distinct setups: the it/IT just works {TV, wifi, family ipads and computers}; and the toy-box of half finished RasberryPI projects, Bluetooth code and web-apps.
                 
 I'm 'into computers', cloud, tablet, coding, building. I like mobile, Internet of Things, Virtual Reality, Augmented Reality. As a proper old skool geek I am into all of the Linux, Apple and Microsoft.",
+                ["quote"] = @"On two occasions I have been asked, ‘Pray, Mr. Babbage, if you put into the machine wrong figures, will the right answers come out?’ I am not able rightly to apprehend the kind of confusion of ideas that could provoke such a question.",
+                ["quote_author"] = @"Charles Babbage",
+                ["born"] = @"1975",
+                ["workas"] = @"Consultant",
+                ["email"] = @"e@dou",
+                ["email_tld"] = @"gs",
+                ["project_into"] = @"Some of the large number of different projects I’ve been lucky enough to work on over the years...",
              };
 
             string value = "";
@@ -30,6 +37,5 @@ I'm 'into computers', cloud, tablet, coding, building. I like mobile, Internet o
 
             return Ok(value);
         }
-
     }
 }
