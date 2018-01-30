@@ -42,7 +42,7 @@ namespace cv.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Json(fullPortfolio.Keys.ToList());
+            return Json(fullPortfolio.Select(x=>x.Value.title).ToList());
         }
     }
 }
