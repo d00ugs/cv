@@ -26,7 +26,7 @@ I'm 'into computers', cloud, tablet, coding, building. I like mobile, Internet o
                 ["workas"] = @"Consultant",
                 ["email"] = @"e@dou",
                 ["email_tld"] = @"gs",
-                ["project_into"] = @"Some of the large number of different projects I’ve been lucky enough to work on over the years...",
+                ["project_intro"] = @"Some of the large number of different projects I’ve been lucky enough to work on over the years...",
              };
 
             string value = "";
@@ -35,7 +35,8 @@ I'm 'into computers', cloud, tablet, coding, building. I like mobile, Internet o
                 return NotFound();
             }
 
-            return Ok(value);
+
+            return Json(value);
         }
     }
 }
