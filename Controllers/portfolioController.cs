@@ -15,6 +15,7 @@ namespace cv.Controllers
             public string description {get; set;} = "";
             public string category { get; set; } = "";
             public string duration { get; set; } = "";
+            public string imgUrl { get; set; } = "";
         }
         static Dictionary<string, string> categories = new Dictionary<string, string>()
         {
@@ -26,7 +27,7 @@ namespace cv.Controllers
 
         Dictionary<string, portfolio> fullPortfolio = new Dictionary<string, portfolio>() 
         {
-            ["em_patent"] = new portfolio() {title = @"Electromagnetic surveying", category = "patent", description = @"I have one patent to my name. https://www.google.com/patents/US20130221969
+            ["em_patent"] = new portfolio() {title = @"Electromagnetic surveying", category = "patent", imgUrl="US-PatentTrademarkOffice.png", description = @"I have one patent to my name. https://www.google.com/patents/US20130221969
 
     ABSTRACT
     Disclosed are methods and apparatus for adaptive source electromagnetic (EM) surveying. In accordance with one embodiment, a source waveform signal is generated, and an outgoing EM signal which is based on the source waveform signal is transmitted using an antenna. A responsive electromagnetic signal is detected using at least one electromagnetic sensor, and a receiver waveform signal based on the responsive electromagnetic signal is obtained. A feedback control signal which depends on at least one input signal is determined. Based on the feedback control signal, the source waveform signal is adapted. Other embodiments, aspects, and features are also disclosed."},
