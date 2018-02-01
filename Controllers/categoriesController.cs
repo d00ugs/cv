@@ -34,7 +34,7 @@ namespace cv.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Json(categories);
+            return Json(categories.ToList());
         }
     }
 }
